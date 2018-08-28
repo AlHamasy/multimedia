@@ -26,6 +26,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnAudio.setOnClickListener(this);
         btnAudioSederhana.setOnClickListener(this);
+        btnAudioStreaming.setOnClickListener(this);
+        btnVideo.setOnClickListener(this);
+        btnVideoStreaming.setOnClickListener(this);
 
     }
 
@@ -39,6 +42,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.btn_audio_sederhana:
                 startActivity(new Intent(MainActivity.this, AudioSederhanaActivity.class));
+                break;
+
+            case R.id.btn_audio_streaming:
+                startActivity(new Intent(MainActivity.this, AudioStreamingActivity.class));
+                break;
+
+            case R.id.btn_video:
+                startActivity(new Intent(MainActivity.this, VideoActivity.class));
+                break;
+
+            case R.id.btn_video_streaming:
+                startActivity(new Intent(MainActivity.this, VideoStreamingActivity.class));
                 break;
 
         }
